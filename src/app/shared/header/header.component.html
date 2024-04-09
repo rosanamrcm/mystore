@@ -1,0 +1,27 @@
+<div class="top-bar">
+    <h1 routerLink="">MY STORE</h1>
+    <div class="search">
+        <input type="text">
+        <button class="glass">
+            <img src="../assets/icons/glass.png" alt="glass">
+        </button>
+    </div>
+    <a class="login" routerLink="login" *ngIf="!isAuthenticated">ENTRAR</a>  
+    <div class="box-dropdown">
+        <a class="loged" *ngIf="isAuthenticated" (click)="toggleMenu()">Olá, {{user.name}}!</a>
+        <div class="menu" *ngIf="isMenuOpened">
+            <div class="menu-item" (click)="requests()">Meus Pedidos</div>
+            <div class="menu-item" (click)="exchanges()">Trocas e Devoluções</div>
+            <div class="menu-item" (click)="favorites()">Meus Favoritos</div>
+            <div class="menu-item" (click)="account()">Informações da Conta</div>
+            <div class="menu-item" (click)="address()">Meus Endereços</div>
+            <div class="menu-item" (click)="creditCard()">Meus Cartões</div>
+        </div>
+    </div>
+    
+    <a class="logout" routerLink="" *ngIf="isAuthenticated" (click)="logout()">SAIR</a>
+    <button class="check-out">
+        <img src="../assets/icons/cart.png" alt="cart">
+        <h3>CHECKOUT</h3>
+    </button>
+</div>

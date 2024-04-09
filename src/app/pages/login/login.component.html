@@ -1,0 +1,64 @@
+<div class="container">
+    <h4>JÁ SOU CLIENTE MY STORE</h4>
+    <div class="e-mail">
+        <h5>E-mail:</h5>
+        <input type="email" placeholder="email@email.com" [(ngModel)] = "user.email">
+    </div>
+    <div class="password">
+        <h5>Senha:</h5>
+        <div class="box-input-password">
+            <input [type]="passwordType" placeholder="*****" [(ngModel)] = "user.password" (keyup.enter)="login()">
+            <img [src]="pathIcon" alt="closed-eye" (click)="togglePassword()">  
+        </div>
+    </div>
+    <button class="btn" (click)="login()" >Entrar</button>
+    <p> {{ errorMessage }} </p>
+    <h5 (click)="send()">Esqueci meus dados de acesso</h5>
+    <h4>QUERO ME CADASTRAR</h4>
+    <form #registerClient="ngForm" (ngSubmit)="signUp(registerClient.value)">
+        <div class="name">
+            <h5>Nome:</h5>
+            <input type="text" ngModel name="name">
+        </div>
+        <div class="surname">
+            <h5>Sobrenome:</h5>
+            <input type="text" ngModel name="surname">
+        </div>
+        <div class="email">
+            <h5>E-mail:</h5>
+            <input type="email" ngModel name="email">
+        </div>
+        <div class="password">
+            <h5>Senha:</h5>
+            <div class="box-input-password2">
+                <input [type]="passwordType" placeholder="*****" ngModel name="password">
+                <img [src]="pathIcon" alt="closed-eye" (click)="togglePassword()">  
+            </div>
+        </div>
+        <div class="repeat-password">
+            <h5>Repetir Senha:</h5>
+            <div class="box-input-repeat">
+                <input [type]="passwordType" placeholder="*****" ngModel name="repeat_password">
+                <img [src]="pathIcon" alt="closed-eye" (click)="togglePassword()">  
+            </div> 
+        </div>
+        <div class="sex">
+            <h5>Sexo:</h5>
+            <select ngModel name="gender">
+                <option>Selecione</option>
+                <option>Feminino</option>
+                <option>Masculino</option>
+            </select>
+        </div>
+        <div class="cpf">
+            <h5>CPF:</h5>
+            <input type="text" ngModel name="cpf">
+        </div>
+        <div class="born">
+            <h5>Nascimento:</h5>
+            <input type="datetime" placeholder="DD/MM/AAAA" ngModel name="birthday_date">
+        </div>
+        <button class="btn-2">Criar conta</button>
+    </form>
+</div>
+

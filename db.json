@@ -1,0 +1,143 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "IPHONE 15 PRO",
+      "description": "Tela Super Retina XDR de 6,1 polegadas tela sempre ativa e Dynamic Island.Câmera grande-angular de 48 MP para fotos em altíssima resolução e câmera teleobjetiva de 3x. Design robusto e leve em titânio com botão de Ação, um jeito rápido de acessar seu recurso favorito. Chip A17 Pro que proporciona um salto enorme no desempenho gráfico, transformando a forma de jogar em aparelhos móveis.",
+      "price": 9.299,
+      "image": "../assets/image/iphone15pro.png"
+    },
+    {
+      "id": 2,
+      "name": "IPHONE 15 PRO MAX",
+      "description": "Tela Super Retina XDR de 6,7 polegadas tela sempre ativa e Dynamic Island. Câmera grande-angular de 48 MP para fotos em altíssima resolução e câmera teleobjetiva de 5x, o maior zoom óptico em um iPhone até hoje. Design robusto e leve em titânio com botão de Ação, um jeito rápido de acessar seu recurso favorito.Chip A17 Pro que proporciona um salto enorme no desempenho gráfico, transformando a forma de jogar em aparelhos móveis.",
+      "price": 10.999,
+      "image": "../assets/image/iphone15promax.png"
+    },
+    {
+      "id": 3,
+      "name": "IPHONE 15",
+      "description": "6,1 polegadas com vidro resistente colorido por infusão e design em alumínio nota de rodapé ◊ com a parte da frente em Ceramic Shield.Dynamic Island que mostra alertas e Atividades ao Vivo para você não perder o que é importante quando estiver fazendo outras tarefas. Câmera grande-angular de 48 MP com teleobjetiva de 2x para capturar detalhes incríveis de longe ou de perto. Câmera grande-angular de 48 MP com teleobjetiva de 2x para capturar detalhes incríveis de longe ou de perto",
+      "price": 7.299,
+      "image": "../assets/image/iphone15.png"
+    },
+    {
+      "id": 4,
+      "name": "iPHONE 15 PLUS",
+      "description": "Design resistente de 6,1 pol.¹ com Ceramic Shield e resistência à água e poeira. 6,7 polegadas com vidro resistente colorido por infusão e design em alumínio nota de rodapé ◊ com a parte da frente em Ceramic Shield. Câmera grande-angular de 48 MP com teleobjetiva de 2x para capturar detalhes incríveis de longe ou de perto.",
+      "price": 8.299,
+      "image": "../assets/image/iphone15plus.png"
+    },
+    {
+      "id": 5,
+      "name": "iPHONE 14",
+      "description": "Design resistente de 6,1 pol.¹ com Ceramic Shield e resistência à água e poeira.",
+      "price": 5.999,
+      "image": "../assets/image/iphone14.png"
+    },
+    {
+      "id": 6,
+      "name": "IPHONE 13",
+      "description": "Tela Super Retina XDR de 6,1 polegadas. A15 Bionic com GPU de 4 núcleos para um desempenho impressionante.",
+      "price": 5.499,
+      "image": "../assets/image/iphone13.png"
+    },
+    {
+      "id": 7,
+      "name": "IPHONE SE",
+      "description": "Tela Retina HD de 4,7 polegadas nota de rodapé ¹ brilhante, nítida e cheia de cores. Câmera mais inteligente, que faz ajustes automáticos e deixa rostos, lugares e tudo o máximo.",
+      "price": 4.299,
+      "image": "../assets/image/iphonese.png"
+    }
+  ],
+  "user": [
+    {
+      "name": "Rosana",
+      "surname": "Marcos",
+      "email": "mrcm1975@gmail.com",
+      "password": "rosaclaro",
+      "repeat_password": "rosaclaro",
+      "gender": "feminino",
+      "cpf": 69454744372,
+      "birthday_date": "02/10/1975",
+      "id": 1
+    },
+    {
+      "name": "Gabriel",
+      "surname": "Pinheiro",
+      "email": "egcastro96@gmail.com",
+      "password": "knight",
+      "repeat_password": "knight",
+      "gender": "masculino",
+      "cpf": 12345678913,
+      "birthday_date": "08/05/1996",
+      "id": 2
+    },
+    {
+      "name": "Hermano",
+      "surname": "Pinheiro",
+      "email": "srhermanodecastro@gmail.com",
+      "password": "paraguai179",
+      "repeat_password": "paraguai179",
+      "gender": "masculino",
+      "cpf": 45678910123,
+      "birthday_date": "10/12/1994",
+      "id": 3
+    },
+    {
+      "name": "Rosa",
+      "surname": "Marcos",
+      "email": "rosamaria@gmail.com",
+      "password": "abcd",
+      "repeat_password": "abcd",
+      "gender": "feminino",
+      "cpf": "01563274863",
+      "birthday_date": "26/09/1960",
+      "id": 4
+    },
+    {
+      "name": "Maria do Carmo",
+      "surname": "Marcos",
+      "email": "mariadocarmo@gmail.com",
+      "password": "1234",
+      "repeat_password": "1234",
+      "gender": "feminino",
+      "cpf": 88855522236,
+      "birthday_date": "24/04/1962",
+      "id": 5
+    },
+    {
+      "name": "Filipe",
+      "surname": "Cerqueira",
+      "email": "filipe_cerqueira1982@gmail.com",
+      "password": "amor",
+      "repeat_password": "amor",
+      "gender": "Masculino",
+      "cpf": "01245678936",
+      "birthday_date": "04/11/1982",
+      "id": 6
+    },
+    {
+      "name": "Janaina",
+      "surname": "Marcos",
+      "email": "janainamarcos@gmail.com",
+      "password": "12345",
+      "repeat_password": "12345",
+      "gender": "Feminino",
+      "cpf": "78945612352",
+      "birthday_date": "24/11/1989",
+      "id": 7
+    },
+    {
+      "name": "Teste01",
+      "surname": "Testando",
+      "email": "teste01@gmail.com",
+      "password": "Teste123",
+      "repeat_password": "Teste123",
+      "gender": "Masculino",
+      "cpf": "01245678937",
+      "birthday_date": "08051996",
+      "id": 8
+    }
+  ]
+}

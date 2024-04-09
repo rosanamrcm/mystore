@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="container">
+    <div class="box-primary">
+        <div class="box-requests" id="requests" (click)="requests()">
+            <img src="../assets/icons/bag.png" alt="bag">
+            <h4>Meus Pedidos</h4>
+        </div>
+        <div class="box-exchanges" id="exchanges" (click)="exchanges()">
+            <img src="../assets/icons/arrow-right-left.png" alt="arrow-right-left">
+            <h4>Cancelar, Trocar ou Devolver</h4>
+        </div>
+        <div class="box-favorites" id="favorites" (click)="favorites()">
+            <img src="../assets/icons/heart.png" alt="heart">
+            <h4>Meus Favoritos</h4>
+        </div>
+    </div>
+    <div class="box-primary">
+        <div class="box-account" id="account" (click)="account()">
+            <img src="../assets/icons/profile.png" alt="profile">
+            <h4>Informações de Conta</h4>
+        </div>
+        <div class="box-address" id="address">
+            <img src="../assets/icons/address.png" alt="address" (click)="address()">
+            <h4>Meus Endereços</h4>
+        </div>
+        <div class="box-card" id="card">
+            <img src="../assets/icons/card.png" alt="card" (click)="creditCard()">
+            <h4>Meus Cartões</h4>
+        </div>
+    </div>
+</div>

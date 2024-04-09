@@ -1,0 +1,123 @@
+@import '../../core/styles/theme.sass'
+
+
+footer
+    width: 100%
+    display: flex
+    flex-direction: column
+    box-sizing: border-box
+    padding: 8px 16px
+    background-color: $color-secondary
+
+.media
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    height: 120px
+    background-color: $color-secondary
+ 
+    h3
+        font-family:'Poppins', sans-serif
+        font-size: 20px
+        font-weight: 300
+        color: $color-tertiary
+
+    button
+        width: 25%
+        height: 30px
+        font-family:'Poppins', sans-serif
+        font-size: 15px
+        font-weight: 700
+        border-radius: 30px
+        cursor: pointer
+        border: none
+  
+    a
+        cursor: pointer
+        text-decoration: none
+        color: $color-secondary
+        
+    a
+        &:hover
+            text-decoration: underline
+
+    button
+        a
+            &:hover
+                text-decoration: underline
+
+.social-media
+    width: 50%
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    justify-items: center
+    box-sizing: border-box
+   
+.icon 
+    img
+        padding-left: 10px
+        width: 30px
+        height: 30px
+        cursor: pointer
+
+.informations
+    width: 100%
+    display: flex
+    justify-content: center
+    margin-top: 16px
+
+    h4
+        font-family:'Poppins', sans-serif
+        font-size: 20px
+        font-weight: 700
+        color: $color-tertiary
+
+    a
+        cursor: pointer
+        text-decoration: none
+
+    a
+        &:hover
+            text-decoration: underline
+
+@media (max-width: 375px)
+    .media
+        h3
+            padding-right: 100px
+
+    .social-media
+        justify-content: space-between
+
+    .informations       
+        h4
+            margin-left: 30px
+            font-size: 2px
+
+@media (min-width: 376px) and (max-width: 767px)
+    .media
+        h3
+            font-size: 15px
+
+        button
+            margin-top: 5px
+            margin-left: 50px
+
+    .social-media
+        margin-top: 5px
+
+    .informations       
+        h4
+            margin-left: 20px
+            margin-right: 20px
+            font-size: 12px
+
+
+         
+
+      
+
+
+

@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="display" *ngFor="let product of products">
+    <h3>{{product.name}}</h3>
+    <div class="iphone">
+      <img class="image" src={{product.image}} alt="iphone">
+      <div class="iphone-description">
+        <p>{{product.description}}</p>
+        <h4>a partir de R${{product.price}},00</h4>
+        <button class="price">
+          <h5>Comprar</h5>
+        </button>
+      </div>
+    </div>
+  </div>
+</div> 

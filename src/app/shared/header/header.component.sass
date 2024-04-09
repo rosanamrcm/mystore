@@ -1,0 +1,203 @@
+@import '../../core/styles/theme.sass'
+
+.top-bar
+    width: 100%
+    height: 80px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    padding-left: 20px
+    padding-right: 20px
+    align-items: center
+    box-sizing: border-box
+    background-color: $color-primary
+    
+    h1
+        font-family:'Poppins', sans-serif
+        font-size: 40px
+        font-weight: 700
+        color: $color-secondary
+        cursor: pointer
+
+.search
+    width: 450px
+    height: 60px
+    display: flex
+    flex-direction: row
+    align-items: center
+
+    input
+        width: 415px
+        height: 50px
+        padding-left: 10px
+        box-sizing: border-box
+        border: none
+
+.glass
+    width: 35px
+    height: 50px
+    padding-right: 4px
+    cursor: pointer
+    border: none
+    background-color: $color-secondary
+
+    img
+        width: 30px 
+
+.login, .loged, .logout
+    cursor: pointer
+    border: none
+    font-family:'Poppins', sans-serif
+    font-weight: 700
+    font-size: 20px
+    text-decoration: none
+    color:$color-secondary
+   
+.login, .loged, .logout
+    &:hover
+        text-decoration: underline
+
+.menu
+    margin-top: 15px
+
+.menu-item
+    font-size: 15px
+    font-weight: 700
+    cursor: pointer
+
+    &:hover
+        text-decoration: underline
+     
+.check-out
+    width: 200px
+    height: 50px
+    display: flex
+    flex-direction: row
+    padding-right: 50px
+    align-items: center
+    padding-left: 40px
+    border-radius: 30px
+    cursor: pointer
+    border: 1px solid $color-secondary
+    background-color: $color-primary
+
+    img
+        width: 30px
+        height: 30px
+
+    h3
+        font-family:'Poppins', sans-serif
+        font-size: 15px
+        font-weight: 700
+        color: $color-secondary
+
+textarea:focus, input:focus
+    box-shadow: 0 0 0 0
+    outline: 0
+
+.box-dropdown
+    position: relative
+
+.menu
+    position: absolute
+    top: 30px
+    margin-top: 5px
+    padding: 8px 12px 
+    width: 140px
+    transition: 2s ease width
+    background: #fff
+    border-radius: 8px
+    box-shadow: 0 4px 4px #ccc
+
+.menu-item
+    font-size: 10px
+
+@media (max-width: 375px)
+    .top-bar
+        height: 50px
+
+        h1
+            font-size: 10px
+            margin-right: 5px
+
+    .search
+        width: 200px
+        height: 30px
+
+        input
+            width: 170px
+            height: 30px
+
+    .glass
+        width: 30px
+        height: 30px
+
+        img
+            width: 25px
+
+    .login, .loged, .logout
+        margin-left: 2px
+        font-size: 8px
+
+    .check-out
+        width: 119px
+        height: 30px
+        margin-left: 2px
+        margin-right: 2px
+        padding-right:20px
+        padding-left:7px
+    
+    .check-out img
+        width: 25px
+
+    .check-out h3
+        font-size: 10px
+
+@media (min-width: 376px) and (max-width: 767px)
+    .top-bar
+        height: 50px
+
+        h1
+            font-size: 10px
+            margin-right: 5px
+
+    .search
+        width: 200px
+        height: 30px
+
+        input
+            width: 100px
+            height: 30px
+
+    .glass
+        width: 30px
+        height: 30px
+
+        img
+            width: 25px
+
+    .login, .loged, .logout
+        margin-left: 2px
+        font-size: 8px
+
+    .check-out
+        width: 119px
+        height: 30px
+        margin-left: 10px
+        margin-right: 2px
+        padding-right:20px
+        padding-left:7px
+    
+    .check-out img
+        width: 25px
+
+    .check-out h3
+        font-size: 10px
+
+@media (min-width: 768px) and (max-width: 1023px)
+    .top-bar
+        h1
+            font-size: 20px
+    
+    .login, .loged, .logout
+        font-size: 15px
