@@ -13,6 +13,10 @@ import { ProductsService } from 'src/app/service/products.service';
 export class ProductListComponent {
   
   public products: Product[] = [];
+  public productsCheckout: Product[] = [];
+  public product: undefined | Product;
+  public productQuantity: number = 1;
+  public quantity: number = 1;
   
 
   constructor(
@@ -21,10 +25,10 @@ export class ProductListComponent {
   ) {}
 
   public ngOnInit(): void {
-    this.getProducts();   
+    this.showProducts();   
   }
 
-  public getProducts(): void {
+  public showProducts(): void {
     console.log("Chamou")
     this.productsService
       .getProducts()
@@ -34,4 +38,29 @@ export class ProductListComponent {
       })
   }
 
+  addToCart() {
+    if(this.product) {
+      console.log("Chamou")
+      this.product.quantity = this.productQuantity;
+      if(localStorage.getItem('user')) {
+        this.productsService.localAddToCart(this.product);
+      }
+    }
+  }
+
+  handleQuantity(val:string, product: Product) {
+    if(val==='plus') {
+      this.productQuantity++;
+      this.productsCheckout.push(product);
+      
+    } else {
+      if(!(this.productQuantity <= 0))
+        this.productQuantity-- ;
+        this.productsCheckout.pop();
+      }
+      product.quantity = this.productQuantity;
+      console.log("Adicionando o produto: " , product)
+      localStorage.setItem('checkout', JSON.stringify(this.productsCheckout));
+  }
+    
 }

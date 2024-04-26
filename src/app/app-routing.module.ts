@@ -11,6 +11,7 @@ import { FavoritesComponent } from './pages/favorites/favorites.component';
 import { AccountComponent } from './pages/account/account.component';
 import { AddressComponent } from './pages/address/address.component';
 import { CreditCardComponent } from './pages/credit-card/credit-card.component';
+import { SearchComponent } from './pages/search/search.component';
 
 const routes: Routes = [
   {
@@ -60,6 +61,10 @@ const routes: Routes = [
     path: 'credit-card',
     component: CreditCardComponent,
     canActivate: [authGuard]
+  },
+  {
+    path: 'search/:query',
+    component: SearchComponent,
   }
 ];
 

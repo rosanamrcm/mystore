@@ -2,13 +2,18 @@
   <div class="display" *ngFor="let product of products">
     <h3>{{product.name}}</h3>
     <div class="iphone">
-      <img class="image" src={{product.image}} alt="iphone">
+      <div class="product-quantity">
+        <img class="image" src={{product.image}} alt="iphone">
+        <button class="button-buy">Comprar</button>
+        <div class="button-quantity">
+          <button class="button-less" (click)="handleQuantity('min', product)">-</button>
+          <input type="text" value={{productQuantity}}>
+          <button class="button-plus" (click)="handleQuantity('plus', product)">+</button>
+        </div>
+      </div>
       <div class="iphone-description">
         <p>{{product.description}}</p>
         <h4>a partir de R${{product.price}},00</h4>
-        <button class="price">
-          <h5>Comprar</h5>
-        </button>
       </div>
     </div>
   </div>

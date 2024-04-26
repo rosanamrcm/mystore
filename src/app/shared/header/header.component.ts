@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { User } from 'src/app/interface/user';
+import { Product } from 'src/app/interface/product';
+import { ProductsService } from 'src/app/service/products.service';
 import { UserService } from 'src/app/service/user.service';
 
 @Component({
@@ -14,13 +16,15 @@ export class HeaderComponent {
   public users: User[] = [];
   public isAuthenticated: boolean = false;
   public isMenuOpened: boolean = false;
+  public searchResult: Product[] = [];
 
   constructor (
     private userService: UserService,
+    private productsService: ProductsService,
     private router: Router
   ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.userAuthenticated();
   }
 
@@ -69,4 +73,22 @@ export class HeaderComponent {
     this.router.navigate(['/credit-card']);
   }
 
+  public search(query:KeyboardEvent) {
+    if(query) {
+      const element = query.target as HTMLInputElement;
+      this.productsService.searchProducts(element.value).subscribe((result)=> {
+      console.log("resultado:", result)
+      this.searchResult = result;
+      console.log(this.searchResult)
+      })
+    }
+  }
+
+  public hideSearch():void {
+    this.searchResult = [];
+  }
+
+  public submitSearch(val:string) {
+    this.router.navigate([`search/$(val)`])
+  }
 }

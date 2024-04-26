@@ -17,35 +17,35 @@
     {
       "id": 3,
       "name": "IPHONE 15",
-      "description": "6,1 polegadas com vidro resistente colorido por infusão e design em alumínio nota de rodapé ◊ com a parte da frente em Ceramic Shield.Dynamic Island que mostra alertas e Atividades ao Vivo para você não perder o que é importante quando estiver fazendo outras tarefas. Câmera grande-angular de 48 MP com teleobjetiva de 2x para capturar detalhes incríveis de longe ou de perto. Câmera grande-angular de 48 MP com teleobjetiva de 2x para capturar detalhes incríveis de longe ou de perto",
+      "description": "6,1 polegadas com vidro resistente colorido por infusão e design em alumínio nota de rodapé ◊ com a parte da frente em Ceramic Shield.Dynamic Island que mostra alertas e Atividades ao Vivo para você não perder o que é importante quando estiver fazendo outras tarefas. Câmera grande-angular de 48 MP com teleobjetiva de 2x para capturar detalhes incríveis de longe ou de perto. Câmera grande-angular de 48 MP com teleobjetiva de 2x para capturar detalhes incríveis de longe ou de perto.",
       "price": 7.299,
       "image": "../assets/image/iphone15.png"
     },
     {
       "id": 4,
       "name": "iPHONE 15 PLUS",
-      "description": "Design resistente de 6,1 pol.¹ com Ceramic Shield e resistência à água e poeira. 6,7 polegadas com vidro resistente colorido por infusão e design em alumínio nota de rodapé ◊ com a parte da frente em Ceramic Shield. Câmera grande-angular de 48 MP com teleobjetiva de 2x para capturar detalhes incríveis de longe ou de perto.",
+      "description": "Design resistente de 6,1 pol.¹ com Ceramic Shield e resistência à água e poeira. 6,7 polegadas com vidro resistente colorido por infusão e design em alumínio nota de rodapé ◊ com a parte da frente em Ceramic Shield. Câmera grande-angular de 48 MP com teleobjetiva de 2x para capturar detalhes incríveis de longe ou de perto. Design robusto e leve em titânio com botão de Ação, um jeito rápido de acessar seu recurso favorito.Chip A15 Pro que proporciona um salto enorme no desempenho gráfico, transformando a forma de jogar em aparelhos móveis.",
       "price": 8.299,
       "image": "../assets/image/iphone15plus.png"
     },
     {
       "id": 5,
-      "name": "iPHONE 14",
-      "description": "Design resistente de 6,1 pol.¹ com Ceramic Shield e resistência à água e poeira.",
-      "price": 5.999,
+      "name": "iPHONE 14 PLUS",
+      "description": "Design resistente de 6,1 pol.¹ com Ceramic Shield e resistência à água e poeira. Design robusto e leve em titânio com botão de Ação, um jeito rápido de acessar seu recurso favorito.Chip A15 Pro que proporciona um salto enorme no desempenho gráfico, transformando a forma de jogar em aparelhos móveis.",
+      "price": 6.499,
       "image": "../assets/image/iphone14.png"
     },
     {
       "id": 6,
       "name": "IPHONE 13",
-      "description": "Tela Super Retina XDR de 6,1 polegadas. A15 Bionic com GPU de 4 núcleos para um desempenho impressionante.",
+      "description": "Tela Super Retina XDR de 6,1 polegadas. A15 Bionic com GPU de 4 núcleos para um desempenho impressionante. Design robusto e leve em titânio com botão de Ação, um jeito rápido de acessar seu recurso favorito.Chip A15 Pro que proporciona um salto enorme no desempenho gráfico, transformando a forma de jogar em aparelhos móveis.",
       "price": 5.499,
       "image": "../assets/image/iphone13.png"
     },
     {
       "id": 7,
       "name": "IPHONE SE",
-      "description": "Tela Retina HD de 4,7 polegadas nota de rodapé ¹ brilhante, nítida e cheia de cores. Câmera mais inteligente, que faz ajustes automáticos e deixa rostos, lugares e tudo o máximo.",
+      "description": "Tela Retina HD de 4,7 polegadas nota de rodapé ¹ brilhante, nítida e cheia de cores. Câmera mais inteligente, que faz ajustes automáticos e deixa rostos, lugares e tudo o máximo. Design robusto e leve em titânio com botão de Ação, um jeito rápido de acessar seu recurso favorito.Chip A15 Pro que proporciona um salto enorme no desempenho gráfico, transformando a forma de jogar em aparelhos móveis",
       "price": 4.299,
       "image": "../assets/image/iphonese.png"
     }

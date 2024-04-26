@@ -15,6 +15,22 @@ export class ProductsService {
 
   public getProducts(): Observable<Product[]> {
     return this.httpClient.get<Product[]>(`${environment.API_PATH}/products`);
-}
+  }
+
+  public localAddToCart(data:Product) {
+    let cartData = [];
+    let localCart = localStorage.getItem('localCart');
+    if (!localCart) {
+      localStorage.setItem('localCart', JSON.stringify([data]));
+    } else {
+      cartData = JSON.parse(localCart);
+      cartData.push(data);
+      localStorage.setItem('localCart', JSON.stringify(cartData));
+    } 
+  }
+
+  public searchProducts(query:string) {
+    return this.httpClient.get<Product[]>(`http://localhost:3000/products?q=${query}`);
+  }
 
 }

@@ -20,6 +20,10 @@ import { HeaderComponent } from './shared/header/header.component';
 import { ProductListComponent } from './shared/product-list/product-list.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { AgreementComponent } from './pages/agreement/agreement.component';
+import { SearchComponent } from './pages/search/search.component';
+
+
+
 
 
 
@@ -39,6 +43,9 @@ import { AgreementComponent } from './pages/agreement/agreement.component';
     ProductListComponent,
     FooterComponent,
     AgreementComponent,
+    SearchComponent,
+ 
+
 
   ],
   imports: [

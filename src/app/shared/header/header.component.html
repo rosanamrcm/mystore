@@ -1,27 +1,35 @@
 <div class="top-bar">
     <h1 routerLink="">MY STORE</h1>
-    <div class="search">
-        <input type="text">
+    <div class="search-box">
+        <input type="text" #searchInput (keyup)="search($event)" (blur)="hideSearch()">
         <button class="glass">
-            <img src="../assets/icons/glass.png" alt="glass">
+            <img src="../assets/icons/glass.png" (click)="submitSearch(searchInput.value)"alt="glass">
         </button>
+        <ul class="suggested-result" *ngIf="searchResult">
+            <ng-container *ngFor="let product of searchResult">
+                <li (click)="submitSearch(searchInput.value)">
+                    <a>{{product.name}}</a>
+                </li>
+            </ng-container>   
+        </ul>
     </div>
     <a class="login" routerLink="login" *ngIf="!isAuthenticated">ENTRAR</a>  
     <div class="box-dropdown">
         <a class="loged" *ngIf="isAuthenticated" (click)="toggleMenu()">Olá, {{user.name}}!</a>
         <div class="menu" *ngIf="isMenuOpened">
-            <div class="menu-item" (click)="requests()">Meus Pedidos</div>
-            <div class="menu-item" (click)="exchanges()">Trocas e Devoluções</div>
-            <div class="menu-item" (click)="favorites()">Meus Favoritos</div>
-            <div class="menu-item" (click)="account()">Informações da Conta</div>
-            <div class="menu-item" (click)="address()">Meus Endereços</div>
-            <div class="menu-item" (click)="creditCard()">Meus Cartões</div>
+            <a class="menu-item" (click)="requests()">Meus Pedidos</a>
+            <a class="menu-item" (click)="exchanges()">Trocas e Devoluções</a>
+            <a class="menu-item" (click)="favorites()">Meus Favoritos</a>
+            <a class="menu-item" (click)="account()">Informações da Conta</a>
+            <a class="menu-item" (click)="address()">Meus Endereços</a>
+            <a class="menu-item" (click)="creditCard()">Meus Cartões</a>
         </div>
-    </div>
-    
+    </div>    
     <a class="logout" routerLink="" *ngIf="isAuthenticated" (click)="logout()">SAIR</a>
     <button class="check-out">
         <img src="../assets/icons/cart.png" alt="cart">
-        <h3>CHECKOUT</h3>
+        <h3><a>Carrinho(0)</a></h3>
     </button>
 </div>
+
+
